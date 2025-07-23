@@ -6,14 +6,6 @@ import os
 
 load_dotenv()
 
-print("DEBUG Username:", Config.get_username())
-print("DEBUG Password:", Config.get_password())
-print("USERNAME from .env:", os.getenv("USERNAME"))
-
-print("Current working directory:", os.getcwd())  # 🔍 add this line
-
-print("USERNAME from .env:", os.getenv("USERNAME"))
-
 def fetch_stock_data(symbol):
     conn = psycopg2.connect(
         host=Config.get_host_name(),
