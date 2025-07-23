@@ -11,7 +11,7 @@ class Config:
     
     @staticmethod
     def get_username():
-        return os.getenv("USERNAME")
+        return os.getenv("DB_USERNAME")
     
     @staticmethod
     def get_password():
